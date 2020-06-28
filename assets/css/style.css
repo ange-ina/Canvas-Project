@@ -15,14 +15,14 @@ body{
    
 }
 
-section{
+/* section{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
     position: relative;
-}
+} */
 
 #sc1{
     width: 100%;
@@ -30,6 +30,16 @@ section{
     background: url(../img/titel-bild.jpg)center/contain no-repeat;
     color: #fff;
     position: relative;
+}
+#sc1 h1{
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+     position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 40%;
 }
 
 #sc1 p{
@@ -41,12 +51,16 @@ a{
     color: #fff;
     text-decoration: none;
 }
+.canvas{
+    font-weight: 400;
+}
 .pfeil{
-    position: absolute;
-    top: 53vh;
+    display: block;
+    margin-top: 20vh;
+    color:#fff;
     animation: ianime 2s running infinite;
 }
-/* @keyframes ianime{
+@keyframes ianime{
     0% , 100% {
         top: 53vh;
         opacity: 1;
@@ -56,7 +70,7 @@ a{
         top: 55vh;
         opacity: 0;
     }
-} */
+}
 footer{
     width: 100%;
     height: 5vh;
@@ -132,16 +146,18 @@ footer h3{
 #gallery img:last-of-type{
     padding: 0 25%;
 } 
-#sc4{
+#check-back{
     padding: 20vh 5% 15vh
 } 
-#sc4 h2{
+#check-back h2{
+    display: flex;
+
     width: 30%;
     margin: auto;
     text-align: center;
     margin-bottom: 20vh;
 }  
-#sc4 div{
+#check-back div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,14 +166,14 @@ h4{
     font-size: 0.8rem;
     color: #4a4a4a;
 }
-#sc4 div article h4{
+#check-back div article h4{
     padding-left: 25px;
     margin-bottom: 2px;
 }
-#sc4 div article img{
+#check-back div article img{
     width: 200px;
 }
-.art{
+.disclaimer{
     width: 35%;
     text-align: center;
 }
